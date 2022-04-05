@@ -24,7 +24,7 @@ public class BankAccountController implements ApplicationListener<ApplicationRea
 
     @PostMapping(path = "/account/{fromAccount}/transfer/{toAccount}", consumes = "application/json", produces = "application/json")
     public void transfer(@RequestBody Transaction tx, @PathVariable String fromAccount, @PathVariable String toAccount) {
-        bankService.transfer(tx, fromAccount, toAccount);
+        bankService.transfertx, fromAccount, toAccount);
     }
 
     @PostMapping(path = "/account", consumes = "application/json", produces = "application/json")
